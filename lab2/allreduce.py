@@ -95,6 +95,6 @@ for i in range(100):
 	comm.Barrier()
 
 if rank == 0:
-	print("%d; %f" % (size, my_allreduce_time/100.0)	)
+	print("%f" % (my_allreduce_time/100.0)	)
 	
 MPI.Finalize()
